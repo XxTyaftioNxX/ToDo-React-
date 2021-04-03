@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-
 *{
     padding: 0;
     margin: 0;
@@ -76,7 +75,6 @@
     top: 25%;
     left: 50%;
     transform: translate(-50%, -25%);
-    background:  white;    
 }
 /*Add new todo*/
 .AddNewToDo{
@@ -105,3 +103,98 @@
     filter:brightness(1.1);
     transition: all 300ms ease;
 }
+
+/*Addn TODO form*/
+
+.AddNewToDo form{
+    padding: 1rem 1rem calc(1rem + 40px) 1rem;
+    width: 500px;
+    background: white;
+    border-radius: 4px;
+}
+
+.AddNewToDo form .text input{
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.AddNewToDo form .text input:focus{
+    outline: none;
+    border-bottom: 1px solid #0080ff;
+}
+
+.AddNewToDo form .remind{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.AddNewToDo form p{
+    margin-left: 10px;
+}
+
+.AddNewToDo form .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.AddNewToDo form .pick-day{
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.AddNewToDo form .pick-time{
+    padding: 1.5rem;
+}
+
+.AddNewToDo form .pick-project{
+    padding: 0.5rem;    
+}
+
+.AddNewToDo form .pick-project .projects{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.AddNewToDo form .pick-project .projects .project{
+    border: 1px solid #0080ff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.AddNewToDo form .pick-project .projects .active{
+    background-color: #0080ff;
+    color: white;
+}
+
+.AddNewToDo form .cancel{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}
+
+.AddNewToDo form .confirm{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.AddNewToDo form .confirm button{
+    width: 100%;
+    height: 40px;
+    background: #0080ff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+}
+
